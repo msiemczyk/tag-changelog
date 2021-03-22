@@ -7058,7 +7058,7 @@ function getConfig(path) {
   return DEFAULT_CONFIG;
 }
 
-const TAG_REGEX = /^v?(\d+).(\d+).(\d+)$/i;
+const TAG_REGEX = /^v?(\d+).(\d+).(\d+).*$/i;
 
 function validateTag(tag) {
   return TAG_REGEX.test(tag);
